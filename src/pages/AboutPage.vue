@@ -1,84 +1,564 @@
 <template>
-    <main class="about-page">
-        <h1>TENTANG KAMI</h1>
-    </main>
+  <section class="about-page">
 
-    <main class="cerita">
-        <section class="cerita-text">
-            <h1>Cerita Kita</h1>
+    <!-- HEADER -->
+    <div class="about-header">
 
-            <p>
-                online shop ini di kelola oleh siswa/i smk yadika jurusan PPLG
-                sebagai proyek sekaligus membant teman teman mendapatkan
-                perlengkapan sekolah dengan mudah dan terjangkau.
-            </p>
-            <p>
-                setiap produk dipilih dengan dikurasi tim kecil siswa,
-                dengan mengambil langsung di koperasi sekolah.
-            </p>
-        </section>
+      <span class="badge">
+        🏫 TENTANG KAMI
+      </span>
 
-        <section class="image">
-            <div class="cerita-image">
-                <h1>FOTO</h1>
-            </div>
-        </section>
-    </main>
-    </template>
+      <h1>
+        Tentang <span>Onlineshop Sekolah</span>
+      </h1>
 
-    <style scoped>
-    .about-page {
-        text-align: center;
-        padding: 2rem;
-        background: linear-gradient(rgb(39, 153, 241), rgb(51, 144, 231));
-        border-radius: 5px;
-        margin-bottom: 20px;
-        
+      <p>
+        Kenali lebih dekat Onlineshop SMK Yadika Soreang,
+        tempat belanja kebutuhan sekolah dengan mudah dan nyaman.
+      </p>
 
-    }
-    
-    .cerita {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 70%;
-        margin: auto;
-        gap: 30px;
-    }
+    </div>
 
-    .cerita-text {
-        flex: 1;
-        
-    }
-    .cerita-text h1 {
-        
-        margin-bottom: 30px;
-    }
 
-    .cerita-text p{
-        margin-bottom: 30px;
-        line-height: 20px;
-    }
+    <!-- ABOUT CONTENT -->
+    <div class="about-content">
 
-    .image {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex: 1;
-        min-height: 150px;
-        padding: 2rem;
-        text-align: center;
-        box-sizing: border-box;
-        background: linear-gradient(rgb(39, 153, 241), rgb(51, 144, 231));
-        border-radius: 10px;
-        box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
-    }
+      <!-- CARD SEKOLAH -->
+      <div class="about-card">
 
-    .cerita-image {
-        display: flex;
-        justify-content: center;
-        justify-items:center;
-        align-items: center;
-    }
+        <div class="icon">
+          🏫
+        </div>
+
+        <h2>
+          SMK Yadika Soreang
+        </h2>
+
+        <p>
+          SMK Yadika Soreang merupakan sekolah yang berfokus
+          pada pendidikan vokasi dan pengembangan keterampilan
+          siswa agar siap menghadapi dunia kerja maupun melanjutkan
+          pendidikan.
+        </p>
+
+      </div>
+
+
+      <!-- CARD ONLINE SHOP -->
+      <div class="about-card">
+
+        <div class="icon">
+          🛒
+        </div>
+
+        <h2>
+          Onlineshop Sekolah
+        </h2>
+
+        <p>
+          Onlineshop Sekolah dibuat untuk memudahkan siswa dan
+          warga sekolah dalam membeli berbagai kebutuhan sekolah,
+          seperti pakaian, atribut, dan perlengkapan lainnya.
+        </p>
+
+      </div>
+
+
+      <!-- CARD TUJUAN -->
+      <div class="about-card">
+
+        <div class="icon">
+          🎯
+        </div>
+
+        <h2>
+          Tujuan Kami
+        </h2>
+
+        <p>
+          Memberikan pengalaman belanja yang mudah, cepat,
+          praktis, dan nyaman bagi seluruh warga sekolah.
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <!-- KEUNGGULAN -->
+    <div class="keunggulan">
+
+      <h2>
+        Kenapa Belanja di Sini?
+      </h2>
+
+      <div class="features">
+
+        <!-- FEATURE 1 -->
+        <div class="feature">
+
+          <div class="feature-icon">
+            ⚡
+          </div>
+
+          <h3>
+            Praktis
+          </h3>
+
+          <p>
+            Pesan kebutuhan sekolah tanpa harus datang langsung.
+          </p>
+
+        </div>
+
+
+        <!-- FEATURE 2 -->
+        <div class="feature">
+
+          <div class="feature-icon">
+            💰
+          </div>
+
+          <h3>
+            Harga Terjangkau
+          </h3>
+
+          <p>
+            Produk sekolah dengan harga yang ramah untuk siswa.
+          </p>
+
+        </div>
+
+
+        <!-- FEATURE 3 -->
+        <div class="feature">
+
+          <div class="feature-icon">
+            📦
+          </div>
+
+          <h3>
+            Produk Berkualitas
+          </h3>
+
+          <p>
+            Menyediakan produk sekolah yang nyaman dan berkualitas.
+          </p>
+
+        </div>
+
+
+        <!-- FEATURE 4 -->
+        <div class="feature">
+
+          <div class="feature-icon">
+            😊
+          </div>
+
+          <h3>
+            Mudah Digunakan
+          </h3>
+
+          <p>
+            Tampilan sederhana sehingga mudah digunakan semua orang.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+</template>
+
+
+<style scoped>
+
+/* ================================
+   HALAMAN ABOUT
+================================ */
+
+.about-page {
+
+  min-height: 100vh;
+
+  padding: 60px 60px 100px;
+
+  background:
+    linear-gradient(
+      180deg,
+      #bfdbfe 0%,
+      #dbeafe 45%,
+      #eff6ff 100%
+    );
+
+  color: #172554;
+}
+
+
+/* ================================
+   HEADER
+================================ */
+
+.about-header {
+
+  max-width: 750px;
+
+  margin: 0 auto 50px;
+
+  text-align: center;
+}
+
+
+.badge {
+
+  display: inline-block;
+
+  padding: 9px 18px;
+
+  margin-bottom: 15px;
+
+  border-radius: 30px;
+
+  background: #2563eb;
+
+  color: white;
+
+  font-size: 11px;
+
+  font-weight: 800;
+
+  letter-spacing: 2px;
+
+  box-shadow:
+    0 8px 20px
+    rgba(37, 99, 235, 0.25);
+}
+
+
+.about-header h1 {
+
+  margin: 10px 0 15px;
+
+  font-size: 42px;
+
+  font-weight: 800;
+
+  color: #172554;
+
+}
+
+
+.about-header h1 span {
+
+  color: #2563eb;
+
+}
+
+
+.about-header p {
+
+  margin: 0;
+
+  color: #475569;
+
+  font-size: 15px;
+
+  line-height: 1.7;
+
+}
+
+
+/* ================================
+   ABOUT CARD
+================================ */
+
+.about-content {
+
+  max-width: 1100px;
+
+  margin: auto;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 25px;
+
+}
+
+
+.about-card {
+
+  padding: 30px;
+
+  text-align: center;
+
+  background: white;
+
+  border: 1px solid #bfdbfe;
+
+  border-radius: 22px;
+
+  box-shadow:
+    0 10px 25px
+    rgba(37, 99, 235, 0.10);
+
+  transition: 0.3s ease;
+
+}
+
+
+.about-card:hover {
+
+  transform: translateY(-8px);
+
+  box-shadow:
+    0 18px 35px
+    rgba(37, 99, 235, 0.20);
+
+}
+
+
+/* ================================
+   ICON
+================================ */
+
+.icon {
+
+  width: 70px;
+
+  height: 70px;
+
+  margin: 0 auto 20px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #dbeafe;
+
+  font-size: 32px;
+
+  box-shadow:
+    0 6px 15px
+    rgba(37, 99, 235, 0.12);
+
+}
+
+
+.about-card h2 {
+
+  margin: 0 0 12px;
+
+  color: #172554;
+
+  font-size: 20px;
+
+}
+
+
+.about-card p {
+
+  margin: 0;
+
+  color: #64748b;
+
+  font-size: 14px;
+
+  line-height: 1.7;
+
+}
+
+
+/* ================================
+   KEUNGGULAN
+================================ */
+
+.keunggulan {
+
+  max-width: 1100px;
+
+  margin: 60px auto 0;
+
+  padding: 40px;
+
+  background: rgba(255, 255, 255, 0.9);
+
+  border: 1px solid #bfdbfe;
+
+  border-radius: 25px;
+
+  box-shadow:
+    0 10px 25px
+    rgba(37, 99, 235, 0.10);
+
+}
+
+
+.keunggulan > h2 {
+
+  margin: 0 0 35px;
+
+  text-align: center;
+
+  color: #172554;
+
+  font-size: 28px;
+
+}
+
+
+/* ================================
+   FEATURES
+================================ */
+
+.features {
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, 1fr);
+
+  gap: 20px;
+
+}
+
+
+.feature {
+
+  padding: 20px;
+
+  text-align: center;
+
+  border-radius: 18px;
+
+  transition: 0.3s ease;
+
+}
+
+
+.feature:hover {
+
+  background: #eff6ff;
+
+  transform: translateY(-5px);
+
+}
+
+
+.feature-icon {
+
+  width: 60px;
+
+  height: 60px;
+
+  margin: 0 auto 15px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 18px;
+
+  background: #dbeafe;
+
+  font-size: 30px;
+
+}
+
+
+.feature h3 {
+
+  margin: 0 0 8px;
+
+  color: #2563eb;
+
+  font-size: 17px;
+
+}
+
+
+.feature p {
+
+  margin: 0;
+
+  color: #64748b;
+
+  font-size: 13px;
+
+  line-height: 1.6;
+
+}
+
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 900px) {
+
+  .about-page {
+
+    padding: 50px 25px 80px;
+
+  }
+
+
+  .about-content {
+
+    grid-template-columns: 1fr;
+
+  }
+
+
+  .features {
+
+    grid-template-columns:
+      repeat(2, 1fr);
+
+  }
+
+}
+
+
+@media (max-width: 600px) {
+
+  .about-page {
+
+    padding: 40px 20px 60px;
+
+  }
+
+
+  .about-header h1 {
+
+    font-size: 30px;
+
+  }
+
+
+  .features {
+
+    grid-template-columns: 1fr;
+
+  }
+
+
+  .keunggulan {
+
+    padding: 25px 15px;
+
+  }
+
+}
+
 </style>
-
